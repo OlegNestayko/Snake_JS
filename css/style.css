@@ -26,3 +26,92 @@ body {
   background-color: hsl(50, 100%, 50%);
   border: 0.25vmin solid black;
 }
+
+/* ---------------------------------------- */
+/* .popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+}
+
+.popup p {
+  margin: 0 0 20px;
+}
+
+.popup button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: white;
+  color: black;
+} */
+
+/* ---------------------------------------- */
+.pop-up {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #4b4949c9;
+
+  transform: translateY(-1000px);
+  transition: all 0.8s linear;
+}
+
+.pop-up__content {
+  padding: 20px 50px;
+
+  border-radius: 10px;
+  background-color: #eee48c;
+}
+
+.pop-up__message,
+.pop-up__message span {
+  font-size: 32px;
+}
+
+.pop-up__message span {
+  margin-left: 10px;
+  color: rgb(223, 39, 7);
+}
+
+.pop-up__btn {
+  margin: 0px auto;
+  padding: 5px 15px;
+
+  display: block;
+
+  font-size: 20px;
+  color: #f5f5f5;
+
+  background-color: rgb(0, 204, 255);
+
+  border: 1px solid transparent;
+  border-radius: 15px;
+
+  transition: all 0.5 ease;
+}
+
+.pop-up__btn:hover {
+  color: rgb(0, 204, 255);
+
+  background-color: #f5f5f5;
+
+  border-color: rgb(0, 204, 255);
+}

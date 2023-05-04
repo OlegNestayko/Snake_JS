@@ -14,9 +14,15 @@ const gameBoard = document.getElementById("game-board");
 
 function main(currentTime) {
   if (gameOver) {
-    if (confirm("You lost. Press ok to restart.")) {
+    const popup = document.querySelector(".pop-up");
+    popup.style.transform = "translateY(0px)";
+    const restartButton = document.querySelector(".pop-up__btn");
+
+    restartButton.addEventListener("click", () => {
       window.location = "/";
-    }
+      popup.style.transform = "translateY(-1000px)";
+    });
+
     return;
   }
 
