@@ -5,11 +5,11 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  background-color: black;
+  background: url("../img/forest.jpg") 0 0 / cover no-repeat;
 }
 
 #game-board {
-  background-color: #ccc;
+  background-color: #cccccc69;
   width: 100vmin;
   height: 100vmin;
   display: grid;
@@ -26,36 +26,6 @@ body {
   background-color: hsl(50, 100%, 50%);
   border: 0.25vmin solid black;
 }
-
-/* ---------------------------------------- */
-/* .popup {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border: 2px solid black;
-  padding: 20px;
-  text-align: center;
-}
-
-.popup p {
-  margin: 0 0 20px;
-}
-
-.popup button {
-  background-color: black;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.popup button:hover {
-  background-color: white;
-  color: black;
-} */
 
 /* ---------------------------------------- */
 .pop-up {
